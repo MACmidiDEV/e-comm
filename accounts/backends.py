@@ -19,13 +19,14 @@ class CaseInsensitiveAuth:
         or email (case insensitive) and verify the password
         """
         # Filter all users by searching for a match by username/ email.
-        users = User.objects.filter(Q(username__iexact=username_or_email) |
-                                    Q(email__iexact=username_or_email))
+        users = User.objects.filter(Q(username__iexact=username_or_email)
+                                        | Q(email__iexact=username_or_email))
+        
         if not users:
             return None
 
         # Then get the first result of the query (which is your user).
-        user = users[0]
+        user = users[0] 
         # If the password is correct, return user object
         if user.check_password(password):
             return user
