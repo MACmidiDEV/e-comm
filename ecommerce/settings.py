@@ -29,7 +29,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', 'd6de16e99a844c3983536825775036ae.vfs.cloud9.us-east-1.amazonaws.com']
+# ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', 'd6de16e99a844c3983536825775036ae.vfs.cloud9.us-east-1.amazonaws.com']
+
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', 
+'d6de16e99a844c3983536825775036ae.vfs.cloud9.us-east-1.amazonaws.com', "ecomm-fullstack.herokuapp.com","130657805110" , "012964095166"]
 
 
 # Application definition
