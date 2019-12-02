@@ -1,3 +1,4 @@
+
 """
 Django settings for ecommerce project.
 
@@ -31,8 +32,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', 'd6de16e99a844c3983536825775036ae.vfs.cloud9.us-east-1.amazonaws.com']
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', 
-'d6de16e99a844c3983536825775036ae.vfs.cloud9.us-east-1.amazonaws.com', "ecomm-fullstack.herokuapp.com","130657805110" , "012964095166"]
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', 'd6de16e99a844c3983536825775036ae.vfs.cloud9.us-east-1.amazonaws.com', "ecomm-fullstack.herokuapp.com", "happytreesssss.herokuapp.com"]
 
 
 # Application definition
@@ -89,16 +89,6 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 
-# if "DATABASE_URL" in os.environ:
-#     DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
-# else:
-#     print("Database URL not found. Using SQLite instead")
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         }
-#     }
 
 #  Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -166,9 +156,3 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
-
-
-                                                                                
-
-
-
