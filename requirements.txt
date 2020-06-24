@@ -23,4 +23,4 @@ six==1.5.2
 stripe==1.70.0
 urllib3==1.25.9
 chardet==3.8.3
-urllib3
+
