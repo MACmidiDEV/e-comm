@@ -45,9 +45,6 @@ This site is hosted using GitHub, deployed directly from the master branch to He
 The current site in production is hosted via [HEROKU](https://little-links-learning.herokuapp.com)
 The GitRepo can be found on [GitHub](https://github.com/MACmidiDEV/CInst-M3-Interactive-Development)
 
-## Wireframes
-- ![LittleLinks-DRAFT](https://raw.githubusercontent.com/MACmidiDEV/CInst-M3-Data-Centric-Development/master/LittleLinks/static/images/aDRAFT.jpg "Wireframe")
-
 ## Utilized Technologies
 ### Languages
 - HTML5
